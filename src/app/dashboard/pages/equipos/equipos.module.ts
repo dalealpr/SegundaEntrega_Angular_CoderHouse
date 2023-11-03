@@ -5,6 +5,7 @@ import { EquiposTableComponent } from './components/equipos-table/equipos-table.
 import { SharedModule } from 'src/app/shared/shared.module';
 import { EquiposDialogComponent } from './components/equipos-dialog/equipos-dialog.component';
 import { EquiposDetailComponent } from './components/equipos-detail/equipos-detail.component';
+import { EquiposRoutingModule } from './equipos-routing.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { EquiposDetailComponent } from './components/equipos-detail/equipos-deta
     EquiposDialogComponent,
     EquiposDetailComponent,
   ],
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, SharedModule, EquiposRoutingModule],
   exports: [EquiposComponent],
 })
 export class EquiposModule {}

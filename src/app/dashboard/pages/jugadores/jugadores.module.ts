@@ -6,6 +6,7 @@ import { JugadoresDialogComponent } from './components/jugadores-dialog/jugadore
 import { SharedModule } from 'src/app/shared/shared.module';
 import { JugadoresService } from '../services/jugadores.service';
 import { JugadoresDetailComponent } from './components/jugadores-detail/jugadores-detail.component';
+import { JugadoresRoutingModule } from './jugadores-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { JugadoresDetailComponent } from './components/jugadores-detail/jugadore
     JugadoresDialogComponent,
     JugadoresDetailComponent,
   ],
-  imports: [CommonModule, SharedModule],
+  imports: [CommonModule, SharedModule, JugadoresRoutingModule],
   exports: [JugadoresComponent],
   providers: [JugadoresService],
 })
