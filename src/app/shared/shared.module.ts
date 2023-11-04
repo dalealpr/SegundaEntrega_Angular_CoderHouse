@@ -11,6 +11,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatTableModule } from '@angular/material/table';
 import { FormErrorPipe } from './pipes/form-error.pipe';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -30,6 +31,7 @@ import { RouterModule } from '@angular/router';
     FullnamePipe,
     FormErrorPipe,
     RouterModule,
+    MatCardModule,
   ],
 })
 export class SharedModule {}

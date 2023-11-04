@@ -36,15 +36,6 @@ import { DashboardComponent } from './dashboard.component';
                 (archivo) => archivo.EquiposModule
               ),
           },
-          //   {
-          //     path: 'equipos',
-          //     component: EquiposComponent,
-          //   },
-          //   // Ruta dinamica Detalle Equipo
-          //   {
-          //     path: 'equipos/detail/:id',
-          //     component: EquiposDetailComponent,
-          //   },
           {
             path: '**',
             redirectTo: 'home',
