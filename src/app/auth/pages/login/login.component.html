@@ -1,6 +1,27 @@
-<p>login works!</p>
-<mat-card-content style="background-color: rgb(153, 153, 153)">
-  <button mat-flat-button (click)="login()" color="primary">
-    Iniciar sesión
-  </button>
-</mat-card-content>
+<mat-card class="px-4 py-3 cardLogin">
+  <mat-card-content>
+    <h2 class="titleLogin">Iniciar sesión</h2>
+    <form [formGroup]="loginForm">
+      <div class="d-flex flex-column">
+        <!-- Email -->
+        <mat-form-field class="w-100 mb-3" appearance="outline">
+          <mat-label>Email</mat-label>
+          <input formControlName="email" matInput type="email" />
+        </mat-form-field>
+        <!-- Contraseña -->
+        <mat-form-field class="w-100" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input formControlName="password" matInput type="email" />
+        </mat-form-field>
+        <button
+          mat-flat-button
+          class="mt-5 py-4"
+          (click)="login()"
+          color="primary"
+        >
+          Iniciar sesión
+        </button>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

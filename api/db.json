@@ -17,6 +17,15 @@
       "nombre": "Pedro",
       "apellido": "Ramirez",
       "email": "pedro@mail.com"
+    },
+    {
+      "id": 4,
+      "nombre": "admin",
+      "apellido": "admin",
+      "email": "fake@mail.com",
+      "password": "123456",
+      "token": "asdfghjkl123456",
+      "role": "ADMIN"
     }
   ],
   "jugadores": [
