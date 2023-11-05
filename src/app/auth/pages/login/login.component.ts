@@ -9,8 +9,11 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent {
-  emailControl = new FormControl(null, [Validators.required, Validators.email]);
-  passwordControl = new FormControl(null, [Validators.required]);
+  emailControl = new FormControl('fake@mail.com', [
+    Validators.required,
+    Validators.email,
+  ]);
+  passwordControl = new FormControl('123654', [Validators.required]);
 
   loginForm = new FormGroup({
     email: this.emailControl,
@@ -23,14 +26,7 @@ export class LoginComponent {
     if (this.loginForm.invalid) {
       this.loginForm.markAllAsTouched();
     } else {
-      console.log('Datos login: ' + this.loginForm.value);
-      this.authService.login().subscribe({
-        next: (authUser) => {
-          if (!!authUser) {
-            this.router.navigate(['dashboard']);
-          }
-        },
-      });
+      this.authService.login(this.loginForm.getRawValue());
     }
   }
 }

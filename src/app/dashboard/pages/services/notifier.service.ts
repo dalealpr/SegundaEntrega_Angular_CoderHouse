@@ -31,4 +31,12 @@ export class NotifierService {
       title,
     });
   }
+  //  Metodo MostrarNotificacion
+  showErrorNotif(title: string, message: string): void {
+    this.notifier$.next({
+      type: 'error',
+      message,
+      title,
+    });
+  }
 }

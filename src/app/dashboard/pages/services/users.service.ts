@@ -12,18 +12,24 @@ export class UsersService {
       nombre: 'David',
       apellido: 'Leal',
       email: 'david@mail.com',
+      token: 'asdfghjkl123456',
+      role: 'ADMIN',
     },
     {
       id: 2,
       nombre: 'Juan',
       apellido: 'Perez',
       email: 'juan@mail.com',
+      token: 'asdfghjkl123456',
+      role: 'USER',
     },
     {
       id: 3,
       nombre: 'Pedro',
       apellido: 'Ramirez',
       email: 'pedro@mail.com',
+      token: 'asdfghjkl123456',
+      role: 'USER',
     },
   ];
 

@@ -42,6 +42,8 @@ export class UsersComponent {
               nombre: result.nombre,
               apellido: result.apellido,
               email: result.email,
+              token: result.token,
+              role: result.token,
             });
             this.n++;
           }
